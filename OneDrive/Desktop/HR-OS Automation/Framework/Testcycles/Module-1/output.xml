@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.10 on win32)" generated="20230918 15:09:18.524" rpa="false" schemaversion="3">
+<suite id="s1" name="Login Testcase" source="C:\Users\Kamal Teja INT-212\PycharmProjects\HR-OS Automation\Framework\Testcycles\Module-1\login_testcase.robot">
+<test id="s1-t1" name="Login Test Case" line="8">
+<kw name="Open Login Page" library="login_keywords">
+<kw name="Open Browser">
+<arg>${Login Url}</arg>
+<arg>chrome</arg>
+<msg timestamp="20230918 15:09:18.558" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20230918 15:09:18.558" endtime="20230918 15:09:18.558"/>
+</kw>
+<status status="FAIL" starttime="20230918 15:09:18.557" endtime="20230918 15:09:18.558"/>
+</kw>
+<kw name="Login Details" library="login_keywords">
+<status status="NOT RUN" starttime="20230918 15:09:18.559" endtime="20230918 15:09:18.559"/>
+</kw>
+<kw name="Verify Login" library="login_keywords">
+<status status="NOT RUN" starttime="20230918 15:09:18.559" endtime="20230918 15:09:18.559"/>
+</kw>
+<kw name="Close All Browsers">
+<status status="NOT RUN" starttime="20230918 15:09:18.561" endtime="20230918 15:09:18.561"/>
+</kw>
+<status status="FAIL" starttime="20230918 15:09:18.557" endtime="20230918 15:09:18.561">No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-t2" name="Login with Gmail" line="14">
+<kw name="Gmail Login" library="login_keywords">
+<kw name="Open Browser">
+<arg>${Login Url}</arg>
+<arg>chrome</arg>
+<msg timestamp="20230918 15:09:18.563" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20230918 15:09:18.563" endtime="20230918 15:09:18.563"/>
+</kw>
+<kw name="Click Element">
+<arg>${Terralogic Login}</arg>
+<status status="NOT RUN" starttime="20230918 15:09:18.564" endtime="20230918 15:09:18.564"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230918 15:09:18.564" endtime="20230918 15:09:18.564"/>
+</kw>
+<kw name="Switch Window">
+<arg>NEW</arg>
+<status status="NOT RUN" starttime="20230918 15:09:18.565" endtime="20230918 15:09:18.565"/>
+</kw>
+<kw name="Input Text">
+<arg>${Gmail Input}</arg>
+<arg>${Email}</arg>
+<status status="NOT RUN" starttime="20230918 15:09:18.566" endtime="20230918 15:09:18.566"/>
+</kw>
+<kw name="Click Element">
+<arg>${Next Button}</arg>
+<status status="NOT RUN" starttime="20230918 15:09:18.567" endtime="20230918 15:09:18.567"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230918 15:09:18.567" endtime="20230918 15:09:18.567"/>
+</kw>
+<kw name="Input Text">
+<arg>${Gmail Password Input}</arg>
+<arg>${Gmail Password}</arg>
+<status status="NOT RUN" starttime="20230918 15:09:18.568" endtime="20230918 15:09:18.568"/>
+</kw>
+<kw name="Click Element">
+<arg>${Next Button}</arg>
+<status status="NOT RUN" starttime="20230918 15:09:18.568" endtime="20230918 15:09:18.568"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>20</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230918 15:09:18.568" endtime="20230918 15:09:18.569"/>
+</kw>
+<kw name="Switch Window">
+<arg>MAIN</arg>
+<status status="NOT RUN" starttime="20230918 15:09:18.569" endtime="20230918 15:09:18.569"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${login_successfull}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>//p[@class="Welcome__helloText___1pKQz"]</arg>
+<arg>timeout=10s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" starttime="20230918 15:09:18.569" endtime="20230918 15:09:18.569"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${login_successfull}</arg>
+<arg>Log To Console</arg>
+<arg>Login Successfull</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" starttime="20230918 15:09:18.569" endtime="20230918 15:09:18.570"/>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<arg>${login_successfull}</arg>
+<arg>Log To Console</arg>
+<arg>Invalid Credentials</arg>
+<doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
+<msg timestamp="20230918 15:09:18.570" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<status status="NOT RUN" starttime="20230918 15:09:18.570" endtime="20230918 15:09:18.570"/>
+</kw>
+<status status="FAIL" starttime="20230918 15:09:18.562" endtime="20230918 15:09:18.570"/>
+</kw>
+<kw name="Close Browser">
+<status status="NOT RUN" starttime="20230918 15:09:18.571" endtime="20230918 15:09:18.571"/>
+</kw>
+<status status="FAIL" starttime="20230918 15:09:18.562" endtime="20230918 15:09:18.571">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20230918 15:09:18.526" endtime="20230918 15:09:18.573"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Login Testcase">Login Testcase</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230918 15:09:18.545" level="ERROR">Error in file 'C:\Users\Kamal Teja INT-212\PycharmProjects\HR-OS Automation\Framework\Testcycles\Module-1\login_testcase.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Program Files\Python310\Scripts\robot.exe
+  C:\Program Files\Python310\python310.zip
+  C:\Program Files\Python310\DLLs
+  C:\Program Files\Python310\lib
+  C:\Program Files\Python310
+  C:\Users\Kamal Teja INT-212\AppData\Roaming\Python\Python310\site-packages
+  C:\Program Files\Python310\lib\site-packages</msg>
+<msg timestamp="20230918 15:09:18.550" level="ERROR">Error in file 'C:\Users\Kamal Teja INT-212\PycharmProjects\HR-OS Automation\Framework\Resources\Page_Objects\login_po.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Program Files\Python310\Scripts\robot.exe
+  C:\Program Files\Python310\python310.zip
+  C:\Program Files\Python310\DLLs
+  C:\Program Files\Python310\lib
+  C:\Program Files\Python310
+  C:\Users\Kamal Teja INT-212\AppData\Roaming\Python\Python310\site-packages
+  C:\Program Files\Python310\lib\site-packages</msg>
+<msg timestamp="20230918 15:09:18.555" level="ERROR">Error in file 'C:\Users\Kamal Teja INT-212\PycharmProjects\HR-OS Automation\Framework\Resources\Keywords\login_keywords.robot' on line 2: Resource file '..\Page_Objects\loginPO.robot' does not exist.</msg>
+<msg timestamp="20230918 15:09:18.570" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+</errors>
+</robot>
